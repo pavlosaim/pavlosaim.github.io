@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post-page container narrow-container">
+  <a class="back-link" href="{{ '/blog/' | relative_url }}"><span aria-hidden="true">←</span> All posts</a>
+  <header class="post-header">
+    <p class="eyebrow">{{ page.date | date: "%B %-d, %Y" }}{% if page.categories.size > 0 %}<span class="eyebrow-divider">·</span>{{ page.categories | join: " / " }}{% endif %}</p>
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.excerpt %}<p class="post-excerpt">{{ page.excerpt | strip_html | strip_newlines }}</p>{% endif %}
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <div class="post-end">
+    <span class="post-end-mark" aria-hidden="true">PA.</span>
+    <p>Thanks for reading.</p>
+    <a href="{{ '/blog/' | relative_url }}">Explore more notes <span aria-hidden="true">→</span></a>
+  </div>
+</article>

@@ -1,0 +1,10 @@
+title: Pavlos Aimoniotis
+description: Computer architecture, system performance, and architectural security.
+url: "https://pavlosaim.github.io"
+baseurl: ""
+lang: en
+markdown: kramdown
+permalink: /blog/:title/
+timezone: Europe/Stockholm
+plugins:
+  - jekyll-feed
